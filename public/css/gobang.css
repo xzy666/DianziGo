@@ -1,0 +1,297 @@
+html, body {
+    margin: 0;
+    background-color: #333;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 800px;
+    background-color: orange;
+}
+
+div.success-effect {
+    position: absolute;
+    left: 50%;
+    width: 400px;
+    height: 250px;
+    margin-left: -200px;
+    opacity: 0;
+    /*display: none;*/
+    box-shadow: 5px 5px 10px #888888;
+    transition: opacity 3s;
+}
+
+button#close-success-effect {
+    position: absolute;
+    padding: 0;
+    text-align: center;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+div.message {
+    margin: 0 auto;
+    /*position: absolute;
+    left: 50%;
+    margin-left: -150px;*/
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    z-index: auto;
+    box-shadow: 5px 5px 10px #888888;
+    border-radius: 15px;
+    border: 2px solid orange;
+}
+
+div.switch-front {
+    display: none;
+}
+
+div.sf-btn-set >button {
+    position: relative;
+    width: 60px;
+    height: 25px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+div.sf-btn-set {
+    position: relative;
+    top: 40px;
+    left: 60px;
+    margin: 0px auto;
+}
+
+div.message>span {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    top: 15px;
+    left: 60px;
+    font-weight: 900;
+    font-size: 20px;
+    color: orange;
+}
+
+div.begin-challenge>input {
+    position: relative;
+    top: 30px;
+    left: 80px;
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    background-color: transparent;
+    color: orange;
+    border: none;
+    border-bottom: 2px solid orange;
+}
+
+div.begin-challenge>button {
+    position: relative;
+    top: 70px;
+    left: -60px;
+    width: 60px;
+    height: 25px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+div.gameheader {
+    margin: 0 auto;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+div.gameheader>strong {
+    text-align: center;
+    font-size: 49px;
+    font-family: 楷体;
+    letter-spacing: 49px;
+    border-bottom: 2px solid black;
+}
+
+.player {
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    width: 300px;
+    height: 450px;
+}
+
+div.black-player {
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+div.black-head {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 1px 1px 10px #888888;
+}
+
+div.white-player {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+div.white-head {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 1px 1px 10px #888888;
+}
+
+div.player-title {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    font-size: 30px;
+}
+
+div.player-time {
+    position: absolute;
+    top: 65px;
+    left: 120px;
+}
+
+div.player-inf {
+    position: absolute;
+    top: 49px;
+    left: 120px;
+}
+
+.gamepool {
+    position: absolute;
+    margin: 0px auto;
+    top: 120px;
+    left: 50px;
+    width: 670px;
+    height: 670px;
+}
+
+#gamepool {
+    position: relative;
+    height: 542px;
+    width: 542px;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    left: 0px;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+div.chess-counter {
+    color: orange;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+}
+
+.chessboard {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+.chessblank {
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.whitechess {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #888888;
+}
+
+.blackchess {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 1px 1px 10px #888888;
+}
+
+div.tool-bar {
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    left: 50%;
+    height: 150px;
+    margin-left: 500px;
+    width: 70px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+div.tool-bar>button {
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+}
+
+div.tool-bar>#restart-btn {
+    top: 10px;
+    left: 5px;
+    display: none;
+}
+
+div.tool-bar>#stepnum-btn {
+    top: 10px;
+    left: 5px;
+    display: none;
+}
+
+div.tool-bar>#giveup-btn {
+    top: 45px;
+    left: 5px;
+    display: none;
+}
+
+div.inform {
+    display: none;
+}
